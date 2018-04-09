@@ -1,0 +1,11 @@
+<h1>Home#show</h1>
+<p>Find me in app/views/home/show.html.erb</p>
+
+
+제목 : <%= @post.title %><br>
+내용 : <%= @post.content %>
+<br>
+<br>
+<form action='/home/gohome' type='get'>
+<button type = "submit" name='submit'>되돌아가기!</button>
+</form>

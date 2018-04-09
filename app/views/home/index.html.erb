@@ -1,0 +1,14 @@
+<h1>게시판</h1>
+<p>하고싶은말이 있나요?</p>
+<a href='/home/new'>눌러주세요~</a>
+
+<p>일 촌 평</p>
+
+<% @post.each do |x| %>
+
+<hr>
+제목 : <a href="/home/show/<%=x.id%>"><%=x.title%></a><br>
+내용 : <%=x.content %><br>
+
+<hr>
+<% end %>
